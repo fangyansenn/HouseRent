@@ -64,7 +64,7 @@ public class OrderController {
 		uod.setMsg("200");
 		return  uod;
 	}
-	
+
 	@RequestMapping("/deleteOrder")
 	@ResponseBody
 	public String deleteOrder(int oID) {
@@ -73,4 +73,5 @@ public class OrderController {
 			return "OK";
 		return "FAIL";
 	}
+
 }

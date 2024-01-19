@@ -1,6 +1,7 @@
 package com.house.wym.service;
 
 
+import com.house.wym.entity.Testing;
 import com.house.wym.entity.Users;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -29,4 +30,6 @@ public interface IUserService {
 	 * @return
 	 */
 	public Users checkOldPwd(Users users);
+
+	public int testing(Testing testing);
 }

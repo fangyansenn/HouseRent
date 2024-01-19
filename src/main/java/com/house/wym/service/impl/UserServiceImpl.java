@@ -1,6 +1,7 @@
 package com.house.wym.service.impl;
 
 import com.house.wym.dao.UserMapper;
+import com.house.wym.entity.Testing;
 import com.house.wym.entity.Users;
 import com.house.wym.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +32,11 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public Users checkOldPwd(Users users) {
 		return mapper.checkOldPwd(users);
+	}
+
+//	测试用接口
+	@Override
+	public int testing(Testing testing){
+		return 0;
 	}
 }

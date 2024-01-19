@@ -19,12 +19,16 @@ public interface IHouserService {
 	 * @return
 	 */
 	public House findHouseDetailsById(int id);
+
 	/**
 	 * 添加房源信息
+	 *
 	 * @param house
 	 * @return
 	 */
-	public int addNewHouse(House house);
+	public default int addNewHouse(House house) {
+		return 0;
+	}
 
 	public List<House> findHouseByUser(Page page);
 	/**

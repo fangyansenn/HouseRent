@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.house.wym.dao.TestingMapper">
+    <resultMap type="com.house.wym.entity.Testing" id="BasicMap">
+        <id column="test1" jdbcType="INTEGER" property="test1" />
+        <result column="test2" jdbcType="VARCHAR" property="test2"/>
+        <result column="test3" jdbcType="VARCHAR" property="test3"/>
+    </resultMap>
+
+    <insert id="insertTesting" parameterType="com.house.wym.entity.Testing">
+        insert into t_testing values(#{test1},#{test2},#{test3})
+    </insert>
+
+</mapper>
