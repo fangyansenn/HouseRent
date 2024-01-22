@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.house.wym.entity.House;
 import com.house.wym.service.IHouserService;
+import com.house.wym.service.ITestingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,8 @@ public class HouseDetailsController {
 	
 	@Autowired
 	private IHouserService service;
-	
+
+
 	@RequestMapping("/toDetailsPage")
 	public String toDetailsPage(int id,HttpServletRequest request) {
 		House HouseDetails = service.findHouseDetailsById(id);

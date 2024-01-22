@@ -1,8 +1,8 @@
-package com.house.wym.controller;
+    package com.house.wym.function;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class JsonTesting {
+public class GlobalFunction {
     public static void main(String[] args) throws Exception {
         // 创建 ObjectMapper 对象
         ObjectMapper objectMapper = new ObjectMapper();
@@ -20,7 +20,6 @@ public class JsonTesting {
 
     }
 }
-
 class MyObject {
     private String name;
     private int age;

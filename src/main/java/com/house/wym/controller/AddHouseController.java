@@ -96,7 +96,7 @@ public class AddHouseController {
 	public String addHouse() {
 		return "addhouse";
 	}
-	
+
 	@RequestMapping("/addHouseRecord")
 	@ResponseBody
 	public String addHouse(House house) {
